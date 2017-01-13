@@ -1,0 +1,22 @@
+# spring-boot-samples
+
+|===
+| Sample | Description
+
+| link:spring-boot-data-mongodb[spring-boot-data-mongodb]
+| Stores data using Spring Data MongoDB
+
+| link:spring-boot-data-redis[spring-boot-data-redis]
+|  Stores data using Spring Data redis
+
+| link:spring-boot-data-mybatis[spring-boot-data-mybatis]
+|  Stores data using mysql with mybatis
+
+| link:spring-boot-web-springMVC[spring-boot-web-springMVC]
+| Web server
+
+| link:spring-boot-web-jersey[spring-boot-web-jersey]
+| Web server
+
+| link:spring-boot-logback[spring-boot-sample-logback]
+| Log server with logback
