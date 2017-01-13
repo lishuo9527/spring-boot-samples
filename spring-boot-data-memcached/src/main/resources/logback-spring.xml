@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- 测试环境或开发环境. 多个使用逗号隔开. -->
+	<springProfile name="test,dev">
+		<logger name="me.lishuo" level="DEBUG">
+			<appender-ref ref="STDOUT" />
+		</logger>
+	</springProfile>
+
+
+	<!-- 生产环境 -->
+	<springProfile name="prod">
+		<logger name="me.lishuo" level="ERROR">
+			<appender-ref ref="STDOUT" />
+		</logger>
+	</springProfile>
+
+
+</configuration>
